@@ -7,6 +7,7 @@
 
 import DecimalMath
 
+/// The request object for subscribing to the websocket orderbooks stream.
 public struct OrderBookSubscribe: Codable, Sendable {
 	// MARK: Properties
 	/// The type of message. Subscribe = 0,  Unsubscribe = 1.
@@ -24,12 +25,11 @@ public struct OrderBookSubscribe: Codable, Sendable {
 	// MARK: - Init
 	public init(
 		subscribeType: SubscribeType,
-		dataType: DataType,
 		instruments: [Ticker],
 		depth: Int?
 	) {
 		self.subscribeType = subscribeType
-		self.dataType = dataType
+		self.dataType = .orderbook
 		self.instruments = instruments
 		self.depth = depth
 	}

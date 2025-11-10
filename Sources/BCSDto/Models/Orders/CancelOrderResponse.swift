@@ -7,6 +7,7 @@
 
 import struct Foundation.UUID
 
+/// The object of the response with the result of the order cancellation.
 public struct CancelOrderResponse: Codable, Sendable {
 	// MARK: Properties
 	/// Order ID to cancel.

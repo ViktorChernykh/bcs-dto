@@ -5,7 +5,7 @@
 //  Created by Victor Chernykh on 12.06.2025.
 //
 
-/// Request for retrieving trade history of an account.
+/// Request for an access token.
 public struct Token: Codable, Sendable {
 	// MARK: Properties
 

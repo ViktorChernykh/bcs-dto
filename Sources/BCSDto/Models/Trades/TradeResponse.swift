@@ -8,6 +8,7 @@
 import DecimalMath
 import struct Foundation.Date
 
+/// The object of the response with trades of the instrument.
 public struct TradeResponse: Codable, Sendable {
 	// MARK: Properties
 	/// Type of data. LastTrades or LastTradesSuccess.

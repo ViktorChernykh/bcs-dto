@@ -8,7 +8,7 @@
 import DecimalMath
 import struct Foundation.Date
 
-/// Order status.
+/// An object for getting the order status by its ID.
 public struct OrderStatus: Codable, Sendable {
 	// MARK: Properties
 	/// MessageType.

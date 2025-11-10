@@ -7,7 +7,7 @@
 
 import Foundation
 
-/// Response with information about a specific account.
+/// Returns a token with the requested rights.
 public struct TokenResponse: Codable, Sendable {
 	// MARK: Properties
 

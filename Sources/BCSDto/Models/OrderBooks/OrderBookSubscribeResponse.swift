@@ -8,6 +8,7 @@
 import DecimalMath
 import struct Foundation.Date
 
+/// The response object with orderbook.
 public struct OrderBookSubscribeResponse: Codable, Sendable {
 
 	// MARK: Properties

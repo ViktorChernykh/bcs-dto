@@ -8,6 +8,7 @@
 import DecimalMath
 import struct Foundation.UUID
 
+/// The object of the order changing request.
 public struct ChangeOrder: Codable, Sendable {
 	// MARK: Properties
 	/// New order id.

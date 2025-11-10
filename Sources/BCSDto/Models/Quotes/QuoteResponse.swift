@@ -8,6 +8,7 @@
 import DecimalMath
 import struct Foundation.Date
 
+/// The object of the response indicating the quotes of the instrument.
 public struct QuoteResponse: Codable, Sendable {
 	// MARK: Properties
 	/// Value: quotes.

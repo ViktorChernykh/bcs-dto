@@ -17,7 +17,7 @@ public struct AgreementData: Codable, Sendable {
 	/// Your brokerage account name.
 	public let displayName: String?
 
-	/// The subaccount ID from the request.
+	/// The sub account ID from the request.
 	public let subaccountId: String
 
 	/// Color coding of brokerage accounts (HEX color code).

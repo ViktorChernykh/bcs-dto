@@ -5,6 +5,7 @@
 //  Created by Victor Chernykh on 01.10.2025.
 //
 
+/// Market data types.
 public enum DataType: String, Codable, Sendable {
 	case orderbook = "0"
 	case candles = "1"

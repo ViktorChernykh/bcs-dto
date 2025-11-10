@@ -8,6 +8,7 @@
 import DecimalMath
 import struct Foundation.UUID
 
+/// The object of the order creating request.
 public struct CreateOrder: Codable, Sendable {
 	// MARK: Properties
 	/// Order ID. It is used to track and prevent duplicate order.

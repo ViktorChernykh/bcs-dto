@@ -7,6 +7,7 @@
 
 import struct Foundation.UUID
 
+/// The object of the response with the result of the order changing.
 public struct ChangeOrderResponse: Codable, Sendable {
 	// MARK: Properties
 	/// ID for a new order.

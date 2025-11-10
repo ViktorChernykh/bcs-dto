@@ -5,6 +5,7 @@
 //  Created by Victor Chernykh on 06.10.2025.
 //
 
+/// The request object for subscribing to the websocket quotes of the instrument stream.
 public struct QuoteSubscribe: Codable, Sendable {
 	// MARK: Properties
 	/// The type of message. Subscribe = 0,  Unsubscribe = 1.
@@ -19,11 +20,10 @@ public struct QuoteSubscribe: Codable, Sendable {
 	// MARK: - Init
 	public init(
 		subscribeType: SubscribeType,
-		dataType: DataType,
 		instruments: [Ticker]
 	) {
 		self.subscribeType = subscribeType
-		self.dataType = dataType
+		self.dataType = .quotes
 		self.instruments = instruments
 	}
 }

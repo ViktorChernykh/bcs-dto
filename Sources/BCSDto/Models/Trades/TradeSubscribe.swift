@@ -1,11 +1,12 @@
 //
-//  MarketDataSubscribe.swift
+//  TradeSubscribe.swift
 //  bcs-kit
 //
 //  Created by Victor Chernykh on 06.10.2025.
 //
 
-public struct MarketDataSubscribe: Codable, Sendable {
+/// The request object for subscribing to the websocket trades of the instrument stream.
+public struct TradeSubscribe: Codable, Sendable {
 	// MARK: Properties
 	/// The type of message. Subscribe = 0,  Unsubscribe = 1.
 	public let subscribeType: SubscribeType
@@ -16,24 +17,13 @@ public struct MarketDataSubscribe: Codable, Sendable {
 	/// Array of Instruments.
 	public let instruments: [Ticker]
 
-	/// Depth of orderbook. Default = 20.
-	public let depth: Int?
-
-	/// Time frame type.
-	public let timeFrame: TimeFrame?
-
 	// MARK: - Init
 	public init(
 		subscribeType: SubscribeType,
-		dataType: DataType,
-		instruments: [Ticker],
-		depth: Int? = nil,
-		timeFrame: TimeFrame? = nil
+		instruments: [Ticker]
 	) {
 		self.subscribeType = subscribeType
-		self.dataType = dataType
+		self.dataType = .lasttrades
 		self.instruments = instruments
-		self.depth = depth
-		self.timeFrame = timeFrame
 	}
 }

@@ -7,6 +7,7 @@
 
 import struct Foundation.UUID
 
+/// The object of the response with the result of the order creating.
 public struct CreateOrderResponse: Codable, Sendable {
 	// MARK: Properties
 	/// Order ID to create.

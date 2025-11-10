@@ -9,6 +9,7 @@ import DecimalMath
 
 public typealias Ask = Bid
 
+/// The bid or ask line in the order book.
 public struct Bid: Codable, Sendable {
 	// MARK: Properties
 	/// Price (for bonds - yield). Prices are sorted from the highest to the lowest.

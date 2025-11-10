@@ -7,6 +7,7 @@
 
 import DecimalMath
 
+/// An object with data on the futures in the account and the financial result for the entire time / day.
 public struct FuturesPortfolio: Codable, Sendable {
 	// MARK: Properties
 	/// Instrument code.

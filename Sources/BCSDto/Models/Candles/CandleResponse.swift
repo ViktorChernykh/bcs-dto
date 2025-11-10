@@ -7,7 +7,7 @@
 
 import struct Foundation.Date
 
-/// A server response containing historical candle data for a security.
+/// A server response containing historical candle data for an instrument.
 public struct CandleResponse: Codable, Sendable {
 	// MARK: Properties
 	/// Exchange  or board.

@@ -23,12 +23,11 @@ public struct LastCandleSubscribe: Codable, Sendable {
 	// MARK: - Init
 	public init(
 		subscribeType: SubscribeType,
-		dataType: DataType,
 		instruments: [Ticker],
 		timeFrame: TimeFrame
 	) {
 		self.subscribeType = subscribeType
-		self.dataType = dataType
+		self.dataType = .candles
 		self.instruments = instruments
 		self.timeFrame = timeFrame
 	}
