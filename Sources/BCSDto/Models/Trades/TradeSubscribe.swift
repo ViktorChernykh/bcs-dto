@@ -11,7 +11,7 @@ public struct TradeSubscribe: Codable, Sendable {
 	/// The type of message. Subscribe = 0,  Unsubscribe = 1.
 	public let subscribeType: SubscribeType
 
-	/// Data type subscription: orderbook = 0, candles = 1, lasttrades = 2, quotes = 3.
+	/// Data type subscription: lasttrades = 2.
 	public let dataType: DataType
 
 	/// Array of Instruments.
